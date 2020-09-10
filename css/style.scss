@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -6,6 +8,21 @@
 
 $cell-size: 100px;
 $mark-size: calc(#{$cell-size} * .9);
+$main-font: 'Roboto', sans-serif;
+
+body {
+    font-family: $main-font;
+    background-color: #303030;
+}
+
+.header {
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    margin-left: -172px;
+    font-size: 2rem;
+    color: #01FFFF;
+}
 
 .board {
     width: 100vw;
@@ -27,6 +44,9 @@ $mark-size: calc(#{$cell-size} * .9);
     align-items: center;
     position: relative;
     cursor: pointer;
+    padding: .25rem;
+    border: 1px solid grey;
+    background-color: white;
 
     &.x,
     &.circle {
@@ -38,31 +58,31 @@ $mark-size: calc(#{$cell-size} * .9);
 .cell:first-child,
 .cell:nth-child(2),
 .cell:nth-child(3) {
-    border-top: none;
+    border-top: 1px solid #01FFFF;
 }
 
 .cell:first-child,
 .cell:nth-child(4),
 .cell:nth-child(7) {
-    border-left: none;
+    border-left: 1px solid #01FFFF;
 }
 
 .cell:first-child,
 .cell:nth-child(4),
 .cell:nth-child(7) {
-    border-left: none;
+    border-left: 1px solid #01FFFF;
 }
 
 .cell:nth-child(3),
 .cell:nth-child(6),
 .cell:nth-child(9) {
-    border-right: none;
+    border-right: 1px solid #01FFFF;
 }
 
 .cell:nth-child(7),
 .cell:nth-child(8),
 .cell:nth-child(9) {
-    border-bottom: none;
+    border-bottom: 1px solid #01FFFF;
 }
 
 // Create X on display //
