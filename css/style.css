@@ -144,4 +144,8 @@ body {
   .winning-message.show {
     display: flex; }
 
+@media only screen and (max-width: 600px) {
+  .board {
+    margin-top: 3rem; } }
+
 /*# sourceMappingURL=style.css.map */
